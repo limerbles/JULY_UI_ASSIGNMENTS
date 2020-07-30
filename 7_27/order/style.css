@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    background-color: cornflowerblue;
+    width: 25%;
+    padding: 30px 60px;
+    margin: 30px auto;
+}
+
+form h1 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+form ul {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+form ul li {
+    padding: 20px 20px;
+    background-color: hotpink;
+    cursor: pointer;
+}
+
+form ul li span {
+    float: right;
+}
+
+form ul li.active {
+    background-color: rgb(97, 182, 94);
+}
+
+div.total {
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    text-align: left;
+    color: white;
+    padding: 20px 20px;
+}
+
+div.total span {
+    float: right;
+}
+

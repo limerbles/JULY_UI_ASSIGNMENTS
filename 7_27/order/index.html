@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="script.js"> </script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+<body ng-app="app1">
+  <form  ng-controller="ctr">
+    <h1>Services</h1>
+    <ul ng-repeat= "service in services">
+      <li ng-click="select(service)" ng-class="{active:service.active}">{{service.name}}  <span>{{service.price}}</span></li>
+    </ul>
+    <div class="total">Total: <span>{{total() | currency}}</span></div>
+  </form>
+</body>
+</html>
